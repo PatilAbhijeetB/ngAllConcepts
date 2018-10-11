@@ -1,0 +1,9 @@
+<div>
+    Blogs
+    <div *ngFor="let item of data">
+        <div (click)="onBlogClick(item.id)">
+            <span>{{ item.id }}</span>
+            <span>{{ item.title }}</span>
+        </div>
+    </div>
+</div>

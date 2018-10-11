@@ -1,0 +1,14 @@
+<p>
+  How parent-compoment works!
+</p>
+<!-- <div>
+  Enter Roll No - <input [(ngModel)]="pRoll">
+  <app-child-component [selectedRollNo]="pRoll"></app-child-component>
+</div> -->
+
+<div>
+  <div *ngFor="let item of skills">
+    <p>{{item}}</p>
+  </div>
+  <app-child-component (myEmitter) = "onDataRecive($event)"></app-child-component>
+</div>

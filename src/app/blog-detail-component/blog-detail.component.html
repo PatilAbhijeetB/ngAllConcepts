@@ -1,0 +1,14 @@
+<div>
+    <div *ngFor="let item of data">
+        <div *ngIf="selectedBlogId==item.id">
+            Tittle={{item.id}}
+            <div>
+            Descripetion={{item.descripetion }}
+            </div>
+        </div>
+    </div>
+    <div>
+        <button (click)="onPrevious()">Previous</button>
+        <button (click)="onNext()">Next</button>
+    </div>
+</div>

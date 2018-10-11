@@ -1,0 +1,32 @@
+<p>
+  structural-directives works!
+</p>
+<div>
+  ngIf Directive
+  <br>
+  <br>
+    <div *ngIf = "isTry">
+      Hello, Thanks for Trying !!!!
+    </div>
+</div>
+<div>
+  ngFor Directive
+  <br>
+  <br>
+  <div *ngFor="let i of arr; let ind=index">
+    <p>{{i}} at {{ind}}</p>
+  </div>
+</div>
+<div>
+  ngSwitch Directive
+  <br>
+  <br>
+  Enter Roll Number : <input [(ngModel)]="rollno">
+  <div [ngSwitch]="rollno">
+    <span *ngSwitchCase= "1">One</span>
+    <span *ngSwitchCase= "2">Two</span>
+    <span *ngSwitchCase= "3">Three</span>
+
+  </div>
+</div>
+<hr>
